@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="css/stylesjogadores.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Jogadores</title>
+</head>
+<body>
+    <h1>Cadastro de Jogadores</h1>
+
+    <form action="cadastrojogadores" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="7" max="100" required>
+        <br><br>
+        
+        <label for="sala">Sala:</label>
+        <select id="sala" name="sala" required>
+            <option value="">Selecione uma sala</option>
+            <option value="sala1">9º Ano A</option>
+            <option value="sala2">9º Ano B</option>
+            <option value="sala3">1º Em A</option>
+            <option value="sala4">1º Em B</option>
+            <option value="sala5">2º Em</option>
+        </select>
+        <br><br>
+        
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

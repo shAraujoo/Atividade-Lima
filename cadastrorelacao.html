@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogos</title>
+    <link rel="stylesheet" href="css/stylesrelacao.css">
+</head>
+<body>
+    <h1>Cadastro de Jogos</h1>
+
+    <form id="cadastro-jogo">
+        <label for="time1">Time 1:</label>
+        <input type="text" id="time1" name="time1" required>
+        
+        <label for="time2">Time 2:</label>
+        <input type="text" id="time2" name="time2" required>
+        
+        <label for="vencedor">Vencedor:</label>
+        <select id="vencedor" name="vencedor" required>
+            <option value="">Selecione o vencedor</option>
+            <option value="time1">Time 1</option>
+            <option value="time2">Time 2</option>
+        </select>
+        
+        <input type="submit" value="Registrar Jogo">
+    </form>
+
+    <table id="tabela-jogos">
+        <thead>
+            <tr>
+                <th>Time 1</th>
+                <th>Time 2</th>
+                <th>Vencedor</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
